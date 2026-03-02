@@ -59,7 +59,7 @@ export default function HeroSection() {
         {/* Right: Hero Image */}
         <div className="relative h-96 lg:h-full min-h-96 rounded-lg overflow-hidden bg-secondary">
           <img
-            src="/images/foto_gui.jpeg"
+            src="/images/foto_gui.jpg"
             alt="Guilherme Ribeiro Silva"
             className="w-full h-full object-cover"
           />
