@@ -1,0 +1,97 @@
+/**
+ * Footer - Modern Data Minimalism
+ * Minimal footer with copyright and quick links.
+ */
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-background border-t border-border py-8 lg:py-12">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          {/* About */}
+          <div>
+            <h3 className="font-bold text-foreground mb-3">Sobre</h3>
+            <p className="text-sm text-muted-foreground">
+              Cientista de Dados Sênior especializado em IA Generativa, Machine Learning e desenvolvimento de soluções de impacto.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-bold text-foreground mb-3">Links Rápidos</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="#home" className="text-muted-foreground hover:text-accent transition-colors">
+                  Início
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="text-muted-foreground hover:text-accent transition-colors">
+                  Competências
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="text-muted-foreground hover:text-accent transition-colors">
+                  Projetos
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-muted-foreground hover:text-accent transition-colors">
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className="font-bold text-foreground mb-3">Recursos</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
+                  Publicações
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
+                  Certificações
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
+                  Currículo
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-border pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+            <p>
+              &copy; {currentYear} Cientista de Dados Sênior. Todos os direitos reservados.
+            </p>
+            <div className="flex gap-6">
+              <a href="#" className="hover:text-accent transition-colors">
+                Privacidade
+              </a>
+              <a href="#" className="hover:text-accent transition-colors">
+                Termos
+              </a>
+              <a href="#" className="hover:text-accent transition-colors">
+                Sitemap
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
