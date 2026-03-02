@@ -55,8 +55,8 @@ export default function HeroSection() {
         {/* Right: Hero Image */}
         <div className="relative h-96 lg:h-full min-h-96 rounded-lg overflow-hidden bg-secondary">
           <img
-            src="https://private-us-east-1.manuscdn.com/sessionFile/FdZsV706rycPSdH3zSSr9f/sandbox/h9oxJ0Fjt2p0JvwlMkp46b-img-3_1771949349000_na1fn_YWktZ2VuZXJhdGl2ZS1jb25jZXB0.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80"
-            alt="AI Generative Concept"
+            src="/images/foto_gui.jpeg"
+            alt="Guilherme Ribeiro Silva"
             className="w-full h-full object-cover"
           />
         </div>
