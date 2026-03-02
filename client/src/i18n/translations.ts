@@ -106,10 +106,13 @@ export const translations = {
     experience: {
       title: 'Experiência Profissional',
       education: 'Formação Acadêmica',
+      researcherDate: '06/2025 - Atual',
       researcher: 'Data Science Researcher',
       ford: 'Ford Motor Company',
+      datascientistDate: '10/2024 - Atual',
       datascientist: 'Data Scientist (Pleno)',
       casasbahia: 'Grupo Casas Bahia',
+      datascientistJuniorDate: '11/2023 - 10/2024',
       datascientistJunior: 'Data Scientist',
       unimed: 'Unimed Rio Preto',
       achievement1: 'Construção de AI Agents e soluções baseadas em LLMs para automação e apoio à tomada de decisão',
@@ -137,6 +140,26 @@ export const translations = {
       educationDescription2: 'Machine Learning, Deep Learning, Analytics Avançado, Modelos Preditivos, Estatística Aplicada',
       educationDescription3: 'Banco de Dados, BI, ETL, Segurança de Sistemas, Análise de Sistemas',
     },
+    // Certificates Section
+    certificates: {
+      title: 'Certificados Profissionais',
+      cert1: 'English Proficiency Test - B1, goFLUENT - 12/2025',
+      cert2: 'Science and Engineering on Databricks, Databricks - 01/2025',
+      cert3: 'Data Engineering with Databricks, Databricks - 01/2025',
+      cert4: 'Databricks Lakehouse Fundamentals, Databricks - 01/2025',
+      cert5: 'Generative AI Fundamentals, Databricks - 01/2025',
+      cert6: 'Trilha Digital | Coders 24 | Data Science, Ada Tech - 06/2024',
+      cert7: 'Python for Data Science, Alura - 05/2024',
+      cert8: 'MLflow Fundamentals, Databricks - 08/2023',
+      cert9: 'PySpark for Data Engineering, Udemy - 08/2023',
+    },
+    // Languages Section
+    languages: {
+      title: 'Idiomas',
+      portuguese: 'Português: Nativo',
+      spanish: 'Espanhol: Iniciante (A1)',
+      english: 'Inglês: Intermediário (B1)',
+    },
     // Contact Section
     contact: {
       title: 'Entre em Contato',
@@ -158,6 +181,10 @@ export const translations = {
       phoneLabel: 'Telefone',
       locationLabel: 'Localização',
       location: 'São José do Rio Preto, SP, Brasil',
+      emailValue: 'guilhermeribeiro111@gmail.com',
+      phoneValue: '+55 17 99715-5904',
+      linkedinLabel: 'LinkedIn',
+      linkedinValue: 'linkedin.com/in/guilhermeribeirosilva',
     },
     // Footer
     footer: {
@@ -275,10 +302,13 @@ export const translations = {
     experience: {
       title: 'Professional Experience',
       education: 'Education',
+      researcherDate: '06/2025 - Present',
       researcher: 'Data Science Researcher',
       ford: 'Ford Motor Company',
+      datascientistDate: '10/2024 - Present',
       datascientist: 'Data Scientist (Senior)',
       casasbahia: 'Casas Bahia Group',
+      datascientistJuniorDate: '11/2023 - 10/2024',
       datascientistJunior: 'Data Scientist',
       unimed: 'Unimed Rio Preto',
       achievement1: 'Building AI Agents and LLM-based solutions for automation and decision support',
@@ -306,6 +336,26 @@ export const translations = {
       educationDescription2: 'Machine Learning, Deep Learning, Advanced Analytics, Predictive Models, Applied Statistics',
       educationDescription3: 'Databases, BI, ETL, Security Systems, Systems Analysis',
     },
+    // Certificates Section
+    certificates: {
+      title: 'Professional Certifications',
+      cert1: 'English Proficiency Test - B1, goFLUENT - 12/2025',
+      cert2: 'Science and Engineering on Databricks, Databricks - 01/2025',
+      cert3: 'Data Engineering with Databricks, Databricks - 01/2025',
+      cert4: 'Databricks Lakehouse Fundamentals, Databricks - 01/2025',
+      cert5: 'Generative AI Fundamentals, Databricks - 01/2025',
+      cert6: 'Digital Trail | Coders 24 | Data Science, Ada Tech - 06/2024',
+      cert7: 'Python for Data Science, Alura - 05/2024',
+      cert8: 'MLflow Fundamentals, Databricks - 08/2023',
+      cert9: 'PySpark for Data Engineering, Udemy - 08/2023',
+    },
+    // Languages Section
+    languages: {
+      title: 'Languages',
+      portuguese: 'Portuguese: Native',
+      spanish: 'Spanish: Beginner (A1)',
+      english: 'English: Intermediate (B1)',
+    },
     // Contact Section
     contact: {
       title: 'Get in Touch',
@@ -327,6 +377,10 @@ export const translations = {
       phoneLabel: 'Phone',
       locationLabel: 'Location',
       location: 'São José do Rio Preto, SP, Brazil',
+      emailValue: 'guilhermeribeiro111@gmail.com',
+      phoneValue: '+55 17 99715-5904',
+      linkedinLabel: 'LinkedIn',
+      linkedinValue: 'linkedin.com/in/guilhermeribeirosilva',
     },
     // Footer
     footer: {
@@ -444,10 +498,13 @@ export const translations = {
     experience: {
       title: 'Experiencia Profesional',
       education: 'Educación',
+      researcherDate: '06/2025 - Presente',
       researcher: 'Investigador de Ciencia de Datos',
       ford: 'Ford Motor Company',
+      datascientistDate: '10/2024 - Presente',
       datascientist: 'Científico de Datos (Sénior)',
       casasbahia: 'Grupo Casas Bahia',
+      datascientistJuniorDate: '11/2023 - 10/2024',
       datascientistJunior: 'Científico de Datos',
       unimed: 'Unimed Rio Preto',
       achievement1: 'Construcción de Agentes de IA y soluciones basadas en LLMs para automatización y apoyo a la toma de decisiones',
@@ -475,6 +532,26 @@ export const translations = {
       educationDescription2: 'Machine Learning, Deep Learning, Analytics Avanzado, Modelos Predictivos, Estadística Aplicada',
       educationDescription3: 'Bases de Datos, BI, ETL, Seguridad de Sistemas, Análisis de Sistemas',
     },
+    // Certificates Section
+    certificates: {
+      title: 'Certificaciones Profesionales',
+      cert1: 'English Proficiency Test - B1, goFLUENT - 12/2025',
+      cert2: 'Science and Engineering on Databricks, Databricks - 01/2025',
+      cert3: 'Data Engineering with Databricks, Databricks - 01/2025',
+      cert4: 'Databricks Lakehouse Fundamentals, Databricks - 01/2025',
+      cert5: 'Generative AI Fundamentals, Databricks - 01/2025',
+      cert6: 'Trilha Digital | Coders 24 | Data Science, Ada Tech - 06/2024',
+      cert7: 'Python for Data Science, Alura - 05/2024',
+      cert8: 'MLflow Fundamentals, Databricks - 08/2023',
+      cert9: 'PySpark for Data Engineering, Udemy - 08/2023',
+    },
+    // Languages Section
+    languages: {
+      title: 'Idiomas',
+      portuguese: 'Portugués: Nativo',
+      spanish: 'Español: Principiante (A1)',
+      english: 'Inglés: Intermedio (B1)',
+    },
     // Contact Section
     contact: {
       title: 'Contactarme',
@@ -496,6 +573,10 @@ export const translations = {
       phoneLabel: 'Teléfono',
       locationLabel: 'Ubicación',
       location: 'São José do Rio Preto, SP, Brasil',
+      emailValue: 'guilhermeribeiro111@gmail.com',
+      phoneValue: '+55 17 99715-5904',
+      linkedinLabel: 'LinkedIn',
+      linkedinValue: 'linkedin.com/in/guilhermeribeirosilva',
     },
     // Footer
     footer: {
