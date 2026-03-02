@@ -1,20 +1,23 @@
 import { Badge } from '@/components/ui/badge';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 /**
  * About Section - Modern Data Minimalism
  * Personal narrative with timeline and key milestones.
  */
 export default function AboutSection() {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="py-24 lg:py-32 bg-background">
       <div className="container">
         {/* Section Header */}
         <div className="mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Minha Jornada
+            {t('about.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Uma trajetória focada em transformar dados em decisões inteligentes através de IA e Machine Learning.
+            {t('about.subtitle')}
           </p>
         </div>
 
@@ -82,7 +85,7 @@ export default function AboutSection() {
 
             {/* Technologies */}
             <div className="bg-secondary rounded-lg border border-border p-6">
-              <h4 className="font-bold text-foreground mb-4">Tech Stack Principal</h4>
+              <h4 className="font-bold text-foreground mb-4">{t('about.techStack')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['Python', 'PySpark', 'SQL', 'LLMs', 'MLflow', 'Databricks', 'GCP', 'Azure', 'React', 'Node.js'].map((tech) => (
                   <Badge key={tech} variant="secondary" className="font-mono text-xs">
@@ -96,7 +99,7 @@ export default function AboutSection() {
 
         {/* Timeline */}
         <div className="bg-secondary rounded-lg border border-border p-8 lg:p-12">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Marcos Importantes</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-8">{t('about.milestones')}</h3>
           <div className="space-y-6">
             <div className="flex gap-6">
               <div className="flex-shrink-0">

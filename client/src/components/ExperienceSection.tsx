@@ -1,4 +1,5 @@
 import { Briefcase, Calendar } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 /**
  * Experience Section - Modern Data Minimalism
@@ -6,6 +7,7 @@ import { Briefcase, Calendar } from 'lucide-react';
  * Vertical layout with minimal visual elements emphasizing content.
  */
 export default function ExperienceSection() {
+  const { t } = useLanguage();
   const experiences = [
     {
       role: 'Data Science Researcher',
@@ -51,7 +53,7 @@ export default function ExperienceSection() {
         {/* Section Header */}
         <div className="mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Experiência Profissional
+            {t('experience.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
             Trajetória consolidada em Ciência de Dados com foco em IA Generativa, Machine Learning e impacto de negócio em ambientes corporativos.
@@ -110,7 +112,7 @@ export default function ExperienceSection() {
 
         {/* Education Section */}
         <div className="mt-16 lg:mt-24 p-8 bg-secondary rounded-lg border border-border">
-          <h3 className="text-2xl font-bold text-foreground mb-6">Formação Acadêmica</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-6">{t('experience.education')}</h3>
           <div className="space-y-4">
             <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4 pb-4 border-b border-border">
               <div>

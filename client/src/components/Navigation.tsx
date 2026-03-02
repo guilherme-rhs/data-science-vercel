@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 /**
  * Navigation Component - Modern Data Minimalism
@@ -10,14 +11,15 @@ import { useTheme } from '@/contexts/ThemeContext';
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const { t } = useLanguage();
 
   const navItems = [
-    { label: 'Início', href: '#home' },
-    { label: 'Sobre', href: '#about' },
-    { label: 'Competências', href: '#skills' },
-    { label: 'Projetos', href: '#projects' },
-    { label: 'Experiência', href: '#experience' },
-    { label: 'Contato', href: '#contact' },
+    { label: t('navigation.home'), href: '#home' },
+    { label: t('navigation.about'), href: '#about' },
+    { label: t('navigation.skills'), href: '#skills' },
+    { label: t('navigation.projects'), href: '#projects' },
+    { label: t('navigation.experience'), href: '#experience' },
+    { label: t('navigation.contact'), href: '#contact' },
   ];
 
   return (

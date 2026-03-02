@@ -2,8 +2,11 @@
  * Footer - Modern Data Minimalism
  * Minimal footer with copyright and quick links.
  */
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-background border-t border-border py-8 lg:py-12">
@@ -11,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About */}
           <div>
-            <h3 className="font-bold text-foreground mb-3">Sobre</h3>
+            <h3 className="font-bold text-foreground mb-3">{t('footer.about')}</h3>
             <p className="text-sm text-muted-foreground">
               Cientista de Dados Sênior especializado em IA Generativa, Machine Learning e desenvolvimento de soluções de impacto.
             </p>
@@ -19,26 +22,26 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-foreground mb-3">Links Rápidos</h3>
+            <h3 className="font-bold text-foreground mb-3">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#home" className="text-muted-foreground hover:text-accent transition-colors">
-                  Início
+                  {t('navigation.home')}
                 </a>
               </li>
               <li>
                 <a href="#skills" className="text-muted-foreground hover:text-accent transition-colors">
-                  Competências
+                  {t('navigation.skills')}
                 </a>
               </li>
               <li>
                 <a href="#projects" className="text-muted-foreground hover:text-accent transition-colors">
-                  Projetos
+                  {t('navigation.projects')}
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-muted-foreground hover:text-accent transition-colors">
-                  Contato
+                  {t('navigation.contact')}
                 </a>
               </li>
             </ul>
@@ -46,7 +49,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="font-bold text-foreground mb-3">Recursos</h3>
+            <h3 className="font-bold text-foreground mb-3">{t('footer.resources')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
@@ -80,10 +83,10 @@ export default function Footer() {
             </p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-accent transition-colors">
-                Privacidade
+                {t('footer.privacy')}
               </a>
               <a href="#" className="hover:text-accent transition-colors">
-                Termos
+                {t('footer.terms')}
               </a>
               <a href="#" className="hover:text-accent transition-colors">
                 Sitemap

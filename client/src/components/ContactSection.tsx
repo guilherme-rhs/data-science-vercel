@@ -1,5 +1,6 @@
 import { Mail, Linkedin, Github, MessageSquare, Phone, MapPin } from 'lucide-react';
 import { useState } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 /**
  * Contact Section - Modern Data Minimalism
@@ -9,6 +10,7 @@ import { useState } from 'react';
 export default function ContactSection() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const { t } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -66,7 +68,7 @@ export default function ContactSection() {
 
             {submitted ? (
               <div className="p-6 bg-background rounded border border-accent text-center">
-                <p className="text-accent font-semibold mb-2">Mensagem enviada com sucesso!</p>
+                <p className="text-accent font-semibold mb-2">{t('contact.successMessage')}</p>
                 <p className="text-muted-foreground text-sm">Responderei em breve.</p>
               </div>
             ) : (
@@ -74,7 +76,7 @@ export default function ContactSection() {
                 {/* Name */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
-                    Nome
+                    {t('contact.name')}
                   </label>
                   <input
                     id="name"
@@ -90,7 +92,7 @@ export default function ContactSection() {
                 {/* Email */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
-                    Email
+                    {t('contact.email')}
                   </label>
                   <input
                     id="email"
@@ -106,7 +108,7 @@ export default function ContactSection() {
                 {/* Message */}
                 <div>
                   <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
-                    Mensagem
+                    {t('contact.message')}
                   </label>
                   <textarea
                     id="message"
@@ -124,7 +126,7 @@ export default function ContactSection() {
                   type="submit"
                   className="w-full px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity"
                 >
-                  Enviar Mensagem
+                  {t('contact.send')}
                 </button>
               </form>
             )}

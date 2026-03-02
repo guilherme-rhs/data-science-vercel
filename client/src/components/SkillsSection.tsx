@@ -1,4 +1,5 @@
 import { Code2, Brain, Database, Zap } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 /**
  * Skills Section - Modern Data Minimalism
@@ -6,6 +7,7 @@ import { Code2, Brain, Database, Zap } from 'lucide-react';
  * Data-centric presentation with minimal visual noise.
  */
 export default function SkillsSection() {
+  const { t } = useLanguage();
   const skillCategories = [
     {
       icon: Brain,
@@ -63,7 +65,7 @@ export default function SkillsSection() {
         {/* Section Header */}
         <div className="mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Competências Técnicas
+            {t('skills.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
             Expertise consolidada em IA Generativa, Machine Learning, Engenharia de Dados e MLOps com foco em escalabilidade e impacto de negócio.

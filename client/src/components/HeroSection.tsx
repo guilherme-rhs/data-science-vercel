@@ -3,7 +3,11 @@
  * Asymmetric layout with generated hero image and bold typography.
  * Light background with electric blue accent for CTAs.
  */
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function HeroSection() {
+  const { t } = useLanguage();
+
   return (
     <section id="home" className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -11,11 +15,11 @@ export default function HeroSection() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Transformando dados em
-              <span className="text-accent"> decisões</span>
+              {t('hero.title')}
+              <span className="text-accent"> {t('hero.titleHighlight')}</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              AI Engineer e Cientista de Dados com 5+ anos de experiência em Business Intelligence, Engenharia de Dados e Data Science. Especialista em modelos preditivos, LLMs, RAG, agentes inteligentes e MLOps em ambientes GCP e Azure.
+              {t('hero.description')}
             </p>
           </div>
 
@@ -25,13 +29,13 @@ export default function HeroSection() {
               href="#projects"
               className="px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity text-center"
             >
-              Ver Projetos
+              {t('hero.viewProjects')}
             </a>
             <a
               href="#contact"
               className="px-8 py-3 border-2 border-accent text-accent font-semibold rounded-md hover:bg-accent hover:text-accent-foreground transition-colors text-center"
             >
-              Entre em Contato
+              {t('hero.contact')}
             </a>
           </div>
 
@@ -39,15 +43,15 @@ export default function HeroSection() {
           <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
             <div>
               <p className="text-3xl font-bold text-accent">5+</p>
-              <p className="text-sm text-muted-foreground">Anos de Experiência</p>
+              <p className="text-sm text-muted-foreground">{t('hero.experience')}</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-accent">10+</p>
-              <p className="text-sm text-muted-foreground">Certificações</p>
+              <p className="text-sm text-muted-foreground">{t('hero.certifications')}</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-accent">3</p>
-              <p className="text-sm text-muted-foreground">Posições Atuais</p>
+              <p className="text-sm text-muted-foreground">{t('hero.positions')}</p>
             </div>
           </div>
         </div>

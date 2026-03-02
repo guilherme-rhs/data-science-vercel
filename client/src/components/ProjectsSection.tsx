@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 /**
  * Projects Section - Modern Data Minimalism
@@ -6,9 +7,11 @@ import { ExternalLink, Github } from 'lucide-react';
  * Minimal visual hierarchy with accent color for interactions.
  */
 export default function ProjectsSection() {
+  const { t } = useLanguage();
+
   const projects = [
     {
-      title: 'Modelos de Risco de Credito - Casas Bahia',
+      title: t('projects.creditRisk'),
       description: 'Desenvolvimento e manutencao de modelos de risco de credito e credit scoring em ambiente Databricks. Construcao de credit books a partir de multiplas fontes de dados com monitoramento continuo.',
       technologies: ['Python', 'PySpark', 'SQL', 'Databricks', 'AutoML'],
       impact: 'Suporte estrategico em decisoes de credito em escala',
@@ -23,10 +26,10 @@ export default function ProjectsSection() {
         {/* Section Header */}
         <div className="mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Projetos Destacados
+            {t('projects.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Selecao de projetos que demonstram expertise em IA Generativa, Machine Learning e desenvolvimento de solucoes de impacto em ambientes corporativos.
+            {t('projects.subtitle')}
           </p>
         </div>
 
