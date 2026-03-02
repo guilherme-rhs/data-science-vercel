@@ -16,15 +16,15 @@ export default function LanguageSwitcher() {
         <button
           key={lang.code}
           onClick={() => setLanguage(lang.code)}
-          className={`px-3 py-2 rounded-md transition-all flex items-center gap-1.5 text-sm font-medium ${
+          className={`px-4 py-3 rounded-md transition-all flex items-center gap-2 text-sm font-medium ${
             language === lang.code
-              ? 'bg-accent text-accent-foreground'
-              : 'hover:bg-secondary text-foreground'
+              ? 'bg-accent text-accent-foreground shadow-sm'
+              : 'hover:bg-secondary text-foreground hover:shadow-sm'
           }`}
           title={lang.name}
         >
-          <span className="text-lg">{lang.flag}</span>
-          <span className="hidden sm:inline">{lang.name}</span>
+          <span className="text-2xl">{lang.flag}</span>
+          <span className="hidden sm:inline text-xs uppercase tracking-wide">{lang.name}</span>
         </button>
       ))}
     </div>
