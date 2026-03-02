@@ -23,8 +23,7 @@ export default function LanguageSwitcher() {
           }`}
           title={lang.name}
         >
-          <span className="text-2xl">{lang.flag}</span>
-          <span className="hidden sm:inline text-xs uppercase tracking-wide">{lang.name}</span>
+          <span className="text-xs uppercase tracking-widest font-semibold">{lang.name}</span>
         </button>
       ))}
     </div>
