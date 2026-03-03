@@ -4,10 +4,10 @@ import { Language } from '@/i18n/translations';
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
 
-  const languages: { code: Language; name: string; flag: string; label: string }[] = [
-    { code: 'pt', name: 'PT-BR', flag: '🇧🇷', label: 'Brasil' },
-    { code: 'en', name: 'EN', flag: '🇺🇸', label: 'EUA' },
-    { code: 'es', name: 'ES', flag: '🇪🇸', label: 'Espanha' },
+  const languages: { code: Language; name: string; flag: string }[] = [
+    { code: 'pt', name: 'PT-BR', flag: '🇧🇷' },
+    { code: 'en', name: 'EN', flag: '🇺🇸' },
+    { code: 'es', name: 'ES', flag: '🇪🇸' },
   ];
 
   return (
@@ -21,13 +21,9 @@ export default function LanguageSwitcher() {
               ? 'bg-accent text-accent-foreground shadow-sm'
               : 'hover:bg-secondary text-foreground hover:shadow-sm'
           }`}
-          title={lang.label}
         >
           <span className="text-lg">{lang.flag}</span>
-          <div className="flex flex-col items-start">
-            <span className="text-xs uppercase tracking-widest font-semibold">{lang.name}</span>
-            <span className="text-xs opacity-75">{lang.label}</span>
-          </div>
+          <span className="text-xs uppercase tracking-widest font-semibold">{lang.name}</span>
         </button>
       ))}
     </div>
