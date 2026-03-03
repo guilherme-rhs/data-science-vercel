@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../.git"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../dist"
+		},
+		{
+			"path": "../node_modules"
+		},
+		{
+			"path": "../patches"
+		},
+		{
+			"path": "../server"
+		},
+		{
+			"path": "../shared"
+		}
+	]
+}

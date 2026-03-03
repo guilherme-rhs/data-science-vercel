@@ -5,9 +5,9 @@ export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
 
   const languages: { code: Language; name: string; flagImage: string }[] = [
-    { code: 'pt', name: 'PT', flagImage: '/images/flags/br.svg' },
-    { code: 'en', name: 'EN', flagImage: '/images/flags/us.svg' },
-    { code: 'es', name: 'ES', flagImage: '/images/flags/es.svg' },
+    { code: 'pt', name: 'PT', flagImage: '/images/flags/br.png' },
+    { code: 'en', name: 'EN', flagImage: '/images/flags/us.png' },
+    { code: 'es', name: 'ES', flagImage: '/images/flags/es.png' },
   ];
 
   return (
