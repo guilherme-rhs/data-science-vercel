@@ -157,7 +157,7 @@ export const translations = {
     languages: {
       title: 'Idiomas',
       portuguese: 'Português: Nativo',
-      spanish: 'Espanhol: Iniciante (A1)',
+      spanish: 'Espanhol: Intermediário (A1)',
       english: 'Inglês: Intermediário (B1)',
     },
     // Contact Section
@@ -353,7 +353,7 @@ export const translations = {
     languages: {
       title: 'Languages',
       portuguese: 'Portuguese: Native',
-      spanish: 'Spanish: Beginner (A1)',
+      spanish: 'Spanish: Intermediate (A2)',
       english: 'English: Intermediate (B1)',
     },
     // Contact Section
@@ -549,7 +549,7 @@ export const translations = {
     languages: {
       title: 'Idiomas',
       portuguese: 'Portugués: Nativo',
-      spanish: 'Español: Principiante (A1)',
+      spanish: 'Español: Intermedio (A2)',
       english: 'Inglés: Intermedio (B1)',
     },
     // Contact Section
