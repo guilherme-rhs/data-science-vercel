@@ -7,7 +7,6 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import Home from "./pages/Home";
-import { Analytics } from "@vercel/analytics";
 
 
 function Router() {
@@ -38,7 +37,6 @@ function App() {
             <Toaster />
             <LanguageSwitcher />
             <Router />
-            <Analytics />
           </TooltipProvider>
         </LanguageProvider>
       </ThemeProvider>
