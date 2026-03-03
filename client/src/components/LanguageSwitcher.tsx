@@ -11,7 +11,7 @@ export default function LanguageSwitcher() {
   ];
 
   return (
-    <div className="fixed top-6 right-6 z-50 flex gap-2 bg-background border border-border rounded-lg p-2 shadow-lg lg:flex hidden">
+    <div className="fixed top-6 right-6 z-50 hidden lg:flex gap-2 bg-background border border-border rounded-lg p-2 shadow-lg">
       {languages.map((lang) => (
         <button
           key={lang.code}

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Language } from '@/i18n/translations';
 
 /**
  * Navigation Component - Modern Data Minimalism
@@ -11,7 +12,13 @@ import { useLanguage } from '@/contexts/LanguageContext';
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
-  const { t } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
+
+  const languages: { code: Language; name: string; flagImage: string }[] = [
+    { code: 'pt', name: 'PT', flagImage: '/images/flags/br.png' },
+    { code: 'en', name: 'EN', flagImage: '/images/flags/us.png' },
+    { code: 'es', name: 'ES', flagImage: '/images/flags/es.png' },
+  ];
 
   const navItems = [
     { label: t('navigation.home'), href: '#home' },
@@ -93,6 +100,32 @@ export default function Navigation() {
               )}
             </button>
           )}
+
+          {/* Language Switcher */}
+          <div className="space-y-2">
+            <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">Idioma</p>
+            <div className="flex gap-2">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => setLanguage(lang.code)}
+                  className={`flex-1 px-3 py-2 rounded-md transition-all flex items-center justify-center gap-1 text-xs font-medium ${
+                    language === lang.code
+                      ? 'bg-accent text-accent-foreground shadow-sm'
+                      : 'bg-secondary hover:bg-secondary/80 text-foreground'
+                  }`}
+                  aria-label={lang.name}
+                >
+                  <img 
+                    src={lang.flagImage} 
+                    alt={lang.name} 
+                    className="w-4 h-4 rounded-sm"
+                  />
+                  <span>{lang.name}</span>
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </nav>
 
