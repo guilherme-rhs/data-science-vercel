@@ -27,38 +27,57 @@ export default function AboutSection() {
           <div className="lg:col-span-2 space-y-6">
             <div className="prose prose-invert max-w-none">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Sou Guilherme Ribeiro Silva, um Data Scientist e AI Engineer apaixonado por transformar dados complexos em soluções inteligentes que geram impacto real nos negócios.
+                {t('about.intro')}
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                Começei minha carreira em 2017 na FATEC Rio Preto, onde estudei Tecnologia em Informática para Negócios. Desde então, acumulei mais de 5 anos de experiência com foco em:
+                {t('about.paragraph1')}
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                {t('about.intro2')}
               </p>
 
               <ul className="space-y-3 mt-4">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-muted-foreground"><strong>IA Generativa & LLMs:</strong> Construindo agentes inteligentes e sistemas RAG para automação de processos</span>
+                  <span className="text-muted-foreground whitespace-pre-line">{t('about.skillsIntro')}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-muted-foreground"><strong>Machine Learning em Produção:</strong> Desenvolvendo modelos preditivos de alto impacto com monitoramento contínuo</span>
+                  <span className="text-muted-foreground whitespace-pre-line">{t('about.machineLearning')}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-muted-foreground"><strong>Engenharia de Dados:</strong> Construindo pipelines robusto em ambientes corporativos (Databricks, GCP, Azure)</span>
+                  <span className="text-muted-foreground whitespace-pre-line">{t('about.dataEngineering')}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-muted-foreground"><strong>MLOps & Observabilidade:</strong> Implementando arquiteturas escaláveis com automação e monitoramento</span>
+                  <span className="text-muted-foreground whitespace-pre-line">{t('about.mlops')}</span>
                 </li>
               </ul>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Atualmente, trabalho em múltiplas posições estratégicas: como Data Scientist Pleno na Casas Bahia (modelos de risco de crédito), como Data Science Researcher na Ford Motor Company (AI Agents), e como estudante de AI Engineer na UNIPDS.
+                {t('about.paragraph2')}
               </p>
 
-              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                O que me motiva é resolver problemas complexos através de dados e IA, transformando insights em ações que geram valor real para os negócios e para a sociedade.
+              <ul className="space-y-3 mt-4">
+                <li className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-muted-foreground">{t('about.role1')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-muted-foreground">{t('about.role2')}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-muted-foreground">{t('about.role3')}</span>
+                </li>
+              </ul>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                {t('about.paragraph3')}
               </p>
             </div>
           </div>
@@ -67,18 +86,16 @@ export default function AboutSection() {
           <div className="space-y-6">
             {/* Stats Cards */}
             <div className="bg-secondary rounded-lg border border-border p-6">
+              <h4 className="font-bold text-foreground mb-6">{t('about.statsTitle')}</h4>
               <div className="space-y-6">
                 <div>
-                  <p className="text-4xl font-bold text-accent mb-2">5+</p>
-                  <p className="text-sm text-muted-foreground">Anos de Experiência em Data Science</p>
+                  <p className="text-sm text-muted-foreground">{t('about.stats1')}</p>
                 </div>
                 <div className="border-t border-border pt-6">
-                  <p className="text-3xl font-bold text-accent mb-2">10+</p>
-                  <p className="text-sm text-muted-foreground">Certificações Profissionais</p>
+                  <p className="text-sm text-muted-foreground">{t('about.stats2')}</p>
                 </div>
                 <div className="border-t border-border pt-6">
-                  <p className="text-3xl font-bold text-accent mb-2">3</p>
-                  <p className="text-sm text-muted-foreground">Posições Atuais</p>
+                  <p className="text-sm text-muted-foreground">{t('about.stats3')}</p>
                 </div>
               </div>
             </div>
