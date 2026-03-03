@@ -4,10 +4,10 @@ import { Language } from '@/i18n/translations';
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
 
-  const languages: { code: Language; name: string; flag: string }[] = [
-    { code: 'pt', name: 'PT-BR', flag: '🇧🇷' },
-    { code: 'en', name: 'EN', flag: '🇺🇸' },
-    { code: 'es', name: 'ES', flag: '🇪🇸' },
+  const languages: { code: Language; name: string; flagImage: string }[] = [
+    { code: 'pt', name: 'PT', flagImage: '/images/flags/br.svg' },
+    { code: 'en', name: 'EN', flagImage: '/images/flags/us.svg' },
+    { code: 'es', name: 'ES', flagImage: '/images/flags/es.svg' },
   ];
 
   return (
@@ -22,7 +22,11 @@ export default function LanguageSwitcher() {
               : 'hover:bg-secondary text-foreground hover:shadow-sm'
           }`}
         >
-          <span className="text-lg">{lang.flag}</span>
+          <img 
+            src={lang.flagImage} 
+            alt={lang.name} 
+            className="w-5 h-5 rounded-sm"
+          />
           <span className="text-xs uppercase tracking-widest font-semibold">{lang.name}</span>
         </button>
       ))}
