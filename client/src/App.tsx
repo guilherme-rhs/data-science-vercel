@@ -7,8 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import Home from "./pages/Home";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics";
 
 
 function Router() {
@@ -39,7 +38,6 @@ function App() {
             <Toaster />
             <LanguageSwitcher />
             <Router />
-            <SpeedInsights />
             <Analytics />
           </TooltipProvider>
         </LanguageProvider>
