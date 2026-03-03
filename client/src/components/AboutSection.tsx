@@ -108,8 +108,8 @@ export default function AboutSection() {
                 </div>
               </div>
               <div className="flex-grow">
-                <h4 className="font-bold text-foreground mb-1">Início na Área de TI</h4>
-                <p className="text-muted-foreground text-sm">Graduação em Tecnologia em Informática para Negócios na FATEC Rio Preto</p>
+                <h4 className="font-bold text-foreground mb-1">{t('about.milestone2017')}</h4>
+                <p className="text-muted-foreground text-sm whitespace-pre-line">{t('about.milestone2017Desc')}</p>
               </div>
             </div>
 
@@ -120,8 +120,8 @@ export default function AboutSection() {
                 </div>
               </div>
               <div className="flex-grow">
-                <h4 className="font-bold text-foreground mb-1">Transição para Data Science</h4>
-                <p className="text-muted-foreground text-sm">Primeiro projeto em Machine Learning e Business Intelligence</p>
+                <h4 className="font-bold text-foreground mb-1">{t('about.milestone2019')}</h4>
+                <p className="text-muted-foreground text-sm whitespace-pre-line">{t('about.milestone2019Desc')}</p>
               </div>
             </div>
 
@@ -132,8 +132,8 @@ export default function AboutSection() {
                 </div>
               </div>
               <div className="flex-grow">
-                <h4 className="font-bold text-foreground mb-1">Especialização em IA Aplicada</h4>
-                <p className="text-muted-foreground text-sm">MBA em Data Science e Analytics pela USP/ESALQ com foco em Machine Learning e Deep Learning</p>
+                <h4 className="font-bold text-foreground mb-1">{t('about.milestone2023')}</h4>
+                <p className="text-muted-foreground text-sm whitespace-pre-line">{t('about.milestone2023Desc')}</p>
               </div>
             </div>
 
@@ -144,8 +144,8 @@ export default function AboutSection() {
                 </div>
               </div>
               <div className="flex-grow">
-                <h4 className="font-bold text-foreground mb-1">Especialista em LLMs e AI Agents</h4>
-                <p className="text-muted-foreground text-sm">Estudiando AI Engineer - Engenharia de Inteligência Artificial Aplicada na UNIPDS</p>
+                <h4 className="font-bold text-foreground mb-1">{t('about.milestone2025')}</h4>
+                <p className="text-muted-foreground text-sm whitespace-pre-line">{t('about.milestone2025Desc')}</p>
               </div>
             </div>
           </div>
